@@ -1,19 +1,21 @@
 # Image Search with Text
-Use text to search for images in folder. Built with 🤗 Transformers and 🤗 Datasets.
+by [Tony Assi](https://www.tonyassi.com/)
+
+Use text to search for images in folders. It can search through folder within folders. Built with 🤗 Transformers and 🤗 Datasets.
 
 ## Installation
 ```bash
 pip install -r requirements.txt
 ```
 
-## Train Model
+## Usage
 Import the module
 ```python
 from ImageSearch import ImageSearch
 ```
 Define the model and dataset parameters:
-- **keyword** list of strings will be the labels of the model
-- **key** HuggingFace write access token can be created [here](https://huggingface.co/settings/tokens).
+- **image_dir** parent folder
+- **hf_key** HuggingFace write access token can be created [here](https://huggingface.co/settings/tokens).
 ```python
 image_search = ImageSearch(image_dir='images',
 			   hf_key="HF_KEY")
