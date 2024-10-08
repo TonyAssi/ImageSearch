@@ -31,3 +31,4 @@ image_search.search(text='red rose',
 		    download_path = 'found_images',
 		    num=5)
 ```
+The most similar images will be printed and downloaded.
