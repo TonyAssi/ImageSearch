@@ -14,7 +14,7 @@ Import the module
 from ImageSearch import ImageSearch
 ```
 Define folder path
-- **image_dir** parent folder
+- **image_dir** Parent folder
 - **hf_key** HuggingFace write access token can be created [here](https://huggingface.co/settings/tokens).
 ```python
 image_search = ImageSearch(image_dir='images',
@@ -23,8 +23,9 @@ image_search = ImageSearch(image_dir='images',
 The images will be converted to a 🤗 Dataset and it'll get uploaded to the 🤗 Hub. It'll print out the dataset id. It should look like [tonyassi/images-ds](https://huggingface.co/datasets/tonyassi/images-ds).
 
 Search for image with text prompt
-- **text** text prompt
-- **download_path** top images will be downloaded to this 
+- **text** Text prompt
+- **download_path** Images most similar to text prompt will be downloaded to this path (if download_path='' then images will not be downloaded
+- **num** Number of images
 ```python
 image_search.search(text,
 		    download_path = 'found_images',
