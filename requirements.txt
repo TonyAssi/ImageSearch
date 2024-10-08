@@ -1,0 +1,4 @@
+pillow
+datasets
+sentence_transformers
+faiss-cpu
