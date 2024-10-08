@@ -27,7 +27,7 @@ Search for image with text prompt
 - **download_path** Images most similar to text prompt will be downloaded to this path (if download_path='' then images will not be downloaded
 - **num** Number of images
 ```python
-image_search.search(text,
+image_search.search(text='red rose',
 		    download_path = 'found_images',
 		    num=5)
 ```
