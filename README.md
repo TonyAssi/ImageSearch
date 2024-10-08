@@ -20,14 +20,12 @@ Define folder path
 image_search = ImageSearch(image_dir='images',
 			   hf_key='HF_KEY')
 ```
-The images will be converted to a 🤗 Dataset and it'll get uploaded to the 🤗 Hub. It'll print out the dataset id. It should look like [tonyassi/images-ds](https://huggingface.co/datasets/tonyassi/images-ds).
-
-I'm using a free [image dataset](https://www.kaggle.com/datasets/pavansanagapati/images-dataset?resource=download) from Kaggle.
+The images will be converted to a 🤗 Dataset and it'll get uploaded to the 🤗 Hub. It'll print out the dataset id. It should look like [tonyassi/images-ds](https://huggingface.co/datasets/tonyassi/images-ds). I'm using a free [image dataset](https://www.kaggle.com/datasets/pavansanagapati/images-dataset?resource=download) from Kaggle.
 
 Search for image with text prompt
 - **text** Text prompt
-- **download_path** Images most similar to text prompt will be downloaded to this path (if download_path='' then images will not be downloaded
-- **num** Number of images
+- **download_path** Images most similar to text prompt will be downloaded to this path (if download_path='' then images will not be downloaded)
+- **num** Number of images (optional) defaults to 5
 ```python
 image_search.search(text='red rose',
 		    download_path = 'found_images',
