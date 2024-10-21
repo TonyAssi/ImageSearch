@@ -34,3 +34,21 @@ image_search.search(text='red rose',
 		    num=5)
 ```
 The most similar images will be printed and downloaded.
+
+![0](https://github.com/user-attachments/assets/74f515c2-fec2-491a-96ba-be8d3b9427de)
+![1](https://github.com/user-attachments/assets/a5bcfa3f-fa75-455b-970d-38f7f28259c4)
+![2](https://github.com/user-attachments/assets/ccec1e8a-c750-4442-80d5-9c509b4470c2)
+
+ ```
+flowers/0092.png
+Score: 142.48643
+Index: 0
+
+flowers/0105.png
+Score: 146.4621
+Index: 1
+
+flowers/0095.png
+Score: 148.10144
+Index: 2
+```
