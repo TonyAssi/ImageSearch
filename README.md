@@ -20,7 +20,9 @@ Define folder path
 image_search = ImageSearch(image_dir='images',
 			   hf_key='HF_KEY')
 ```
-The images will be converted to a 🤗 Dataset and it'll get uploaded to the 🤗 Hub. It'll print out the dataset id. It should look like [tonyassi/images-ds](https://huggingface.co/datasets/tonyassi/images-ds). 
+The first time this is called the images will be converted to a 🤗 Dataset and it'll get uploaded to the 🤗 Hub. It'll print out the dataset id and store it in a meta.text file. It should look like [tonyassi/images-ds](https://huggingface.co/datasets/tonyassi/images-ds). It'll take a little longer the first time it's called. After the dataset is created it should be very quicl.
+
+
 
 Search for image with text prompt
 - **text** Text prompt
